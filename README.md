@@ -1,50 +1,66 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# InfoStream Mobile App
 
-## Get started
+InfoStream Mobile is a React Native application that provides users with the latest news from various categories using **The Guardian API**. It includes user authentication for sign-in and sign-out, managed via a **Django** backend.
 
-1. Install dependencies
+## Features
 
-   ```bash
-   npm install
-   ```
+- **News Feeds**: Displays the latest articles from various categories such as technology, business, sports, and more.
+- **Search Functionality**: Allows users to search for specific news articles.
+- **User Authentication**: Sign-up, sign-in, and sign-out functionality using a Django backend.
+- **Modern Mobile UI**: Built with React Native for a seamless mobile experience on both iOS and Android.
 
-2. Start the app
+## Technologies Used
 
-   ```bash
-    npx expo start
-   ```
+### Mobile:
+- **React Native**: Framework for building native mobile apps using JavaScript and React.
+- **Expo**: A toolchain for developing and deploying React Native apps quickly.
+- **The Guardian API**: Provides real-time news data.
 
-In the output, you'll find options to open the app in a
+### Backend:
+- **Django**: Python-based web framework for handling user authentication and serving as the API backend.
+- **Django REST Framework (DRF)**: Used for creating REST APIs that manage user authentication and data access.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Installation and Setup
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Prerequisites:
 
-## Get a fresh project
+- **Node.js**: Download and install Node.js [here](https://nodejs.org/).
+- **Expo CLI**: Install Expo CLI globally using:
+  ```bash
+  npm install -g expo-cli
+  ```
 
-When you're ready, run:
+
+### Clone the Repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/Osamaabdullahi/Infostream-Mobile-App.git
+cd Infostream-Mobile-App
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Install Mobile Dependencies
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### Environment Variables
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Create a `.env` file in the root directory and add the following environment variables:
 
-## Join the community
+```bash
+GUARDIAN_API_KEY=your_guardian_api_key
+```
 
-Join our community of developers creating universal apps.
+### Running the Application
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Start the Expo development server:
+
+```bash
+expo start
+```
+
+The app can be tested on a physical device using the Expo Go app, or on an emulator/simulator.
+
+
